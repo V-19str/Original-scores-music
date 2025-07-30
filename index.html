@@ -51,6 +51,45 @@
       font-weight: bold;
       border-radius: 5px;
     }
+    section {
+      padding: 60px 20px;
+      background-color: rgba(0,0,0,0.7);
+      margin-top: 40px;
+    }
+    h2 {
+      text-align: center;
+      color: #ffcc00;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .box {
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #ffcc00;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
     footer {
       background: rgba(0,0,0,0.9);
       color: #aaa;
@@ -76,6 +115,41 @@
     <h1>Original Scores Music</h1>
     <p>Musiques libres pour l’image & la création audiovisuelle</p>
     <a class="btn" href="https://soundcloud.com/original-scores-music" target="_blank">Écouter sur SoundCloud</a>
+  </section>
+
+  <section id="playlists">
+    <h2>Playlists par ambiance</h2>
+    <div class="grid">
+      <div class="box">Action / Combat</div>
+      <div class="box">Humour / Léger</div>
+      <div class="box">Orchestral / Épique</div>
+      <div class="box">Folk / Acoustique</div>
+      <div class="box">Suspense / Enquête</div>
+      <div class="box">Romance / Nostalgie</div>
+    </div>
+  </section>
+
+  <section id="realisations">
+    <h2>Nos Réalisations</h2>
+    <div style="max-width: 900px; margin: auto; line-height: 1.6;">
+      ARTE – AVORTEMENT, LES CROISÉS CONTRE-ATTAQUENT<br/>
+      C8 – 100 JOURS AVEC LES GENDARMES<br/>
+      CANAL+ – SÉLECTIONNEURS<br/>
+      FRANCE 2 – CASH INVESTIGATION, ENVOYÉ SPÉCIAL...<br/>
+      TF1 – 50' INSIDE, GRANDS REPORTAGES...<br/>
+      M6 – ENQUÊTE EXCLUSIVE, ZONE INTERDITE...<br/>
+      et bien d’autres.
+    </div>
+  </section>
+
+  <section id="brief">
+    <h2>Demande de brief personnalisé</h2>
+    <form action="mailto:vladimirstreiff@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="Nom" placeholder="Votre nom" required />
+      <input type="email" name="Email" placeholder="Votre email" required />
+      <textarea name="Message" placeholder="Décrivez votre besoin..." rows="5" required></textarea>
+      <input type="submit" value="Envoyer" />
+    </form>
   </section>
 
   <footer>
